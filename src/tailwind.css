@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.no-sb::-webkit-scrollbar {
+    display: none;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 7px; /* Width of the scrollbar */
+    height: 6px; /* Width of the scrollbar */
+    cursor: pointer;
+    background-color: transparent; /* Background color of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Border radius of the scrollbar thumb */
+}
+
+
+  
+
+html {
+    background-color: #f5f7fa;
+    overflow-x: hidden;
+}
+
+.dark-mode-html {
+    background-color: #0a082a;
+    color: white;
+}
+
+.dark-mode-html #art{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 10%;
+}
+.dark-mode-html #art2{
+    -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(10%);
+    opacity: 80%;
+}
+
+
+#bug{
+    background-image: url('./assets/orange2.jpg') !important;
+    /* background-image: url('https://images.unsplash.com/photo-1576615039667-c7a34b96f505?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important; */
+    background-blend-mode:multiply ;
+    background-color: #b4b4b4;
+    background-size: cover;
+}
+
+#art{
+    background-image: url('./assets/design.png') !important;
+    background-size: cover;
+    opacity: 70%;
+}
+#art2{
+    background-image: url('./assets/orange5.jpg') !important;
+    /* background-image: url('https://images.unsplash.com/photo-1548504773-429e84f586d2?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important; */
+    background-size: cover;
+    /* opacity: 70%; */
+}
+
+ section, .dark-div {
+    background-color: #fff;
+}
+
+header {
+    background-color: #f5f7fa;
+}
+
+.row-1-cont{
+    overflow-x: scroll !important;
+}
+
+.title-wrapper{
+    color: #fff;
+}
+
+.dark-mode-header, .dark-mode-footer {
+    background-color: #0a082a;
+    color: white;
+}
+
+.dark-mode-section, .dark-mode-div, .dark-mode-input, .dark-mode-textarea {
+    background-color: #303754 !important;
+    color: #fff;
+    transition: 0.618s ease-in-out;
+}
+
+.link-list {
+    text-align: left !important;
+}
+
+.dark-mode-header-div {
+    background-color: #303754 !important;
+    color: #fff;
+}
+
+ul {
+    padding: 0.7em;
+}
+
+.link-list:hover{
+    transform: translateY(9%);
+    transition: 0.3s ease;
+}
+
+
+
+.header-div {
+    background: white;
+}
+
+.dark-div:hover {
+    transition: 0.3s ease-out;
+    transform: scale(0.98) !important;
+    box-shadow: 2px 2px 2px #ee8038;
+}
+
+.orange-title {
+    color: #ee8038;
+}
+
+
+/* .menu-container {
+    transform: translateY(-200%);
+    opacity: 0;
+}
+
+.menu-open{
+    opacity: 100;
+    transition: 0.618s ease-in;
+    transform: translateY(0%);
+} */
+
+.hamburger {
+    background-image: url('./assets/hamburger.png');
+}
+
+.header-pic {
+    background-image: url('https://images.prismic.io/quizlet-web/1691009868783_10Teachers.png?auto=format,compress');
+    opacity: 20%;
+    border-radius: 60em;
+    background-size: contain;
+    background-color: #ee8038;
+    background-blend-mode:luminosity;
+}
+
+button, .form-button, .hire {
+    background-color: rgba(128, 128, 128, 0.269) !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover, .form-button:hover, .hire:hover{
+    background-color: #ee8038 !important;
+}
+
+
+.dark-mode-svg{
+  background-color: #fff!important; /* Set fill color to white */
+  border-radius: 1em;
+  background-blend-mode: difference;
+}
+
+.form{
+    outline: #fff solid 3px;
+}
+
+input {
+    border-radius: 0.3em;
+} 
+
+.dark-mode-form {
+    outline: #303754 solid 3px;
+}
+
+.form-control {
+    width: 100%;
+}
+/* new button by me  */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* color: rgba(0, 0, 0, 0.6); */
+    color:#fff;
+    background-color:#f5f7fa ;
+    border: #ee8038;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure it stays on top */
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    padding: 0;
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  .close-button .fa-times {
+    color: #333;
+  }
+/* new added by me */
+.policy-page {
+    /* background-color: #fff; */
+    /* color: #000; */
+    padding: 2em;
+    margin: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .policy-page-title {
+     color: #ee8038; /*Matching the orange-title color */
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .policy-page-content {
+    line-height: 1.6;
+    /* color: #333; Matching the link-list hover color */
+  }
+  
+  .policy-page ul {
+    padding: 1em 0;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  
+  .policy-page a {
+    /* color: #ee8038; Matching the hover color */
+    text-decoration: none;
+  }
+  
+  .policy-page a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode for Policy Page */
+  .dark-mode .policy-page {
+     /* background-color: #303754;/* Matching the dark mode background */
+     /* color: #fff; Matching the dark mode text color */
+   
+
+  }
+  
+  .dark-mode .policy-page-title {
+    /* color: #ee8038; Keeping the title color same */
+  }
+  
+  .dark-mode .policy-page-content {
+    /* color: #ddd; Light text color for readability */
+  }
+  
+  .policy-page-container {
+    /* background-color: #f5f7fa; */
+  }
+  
+  .policy-content {
+    /* background-color: #fff; */
+    /* border-color: #333; */
+    border-color: #fff;
+  }
+  .policy-page-content h2 {
+    /* color: #000; */
+    color:#ee8038;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 500;  
+  }
+  
+  .policy-page-content p {
+    /* color: #333; */
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+
+  
+  
+
+  
